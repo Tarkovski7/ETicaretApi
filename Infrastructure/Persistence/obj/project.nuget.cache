@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uzNce47N1UABWt1wuFR8g+qTJUUv+ZTuFPkDd82gWxK/oSrHedN3bDGDeWoJ1wF5YLO28EaNz9rVfQUql4QD7A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\trkbg\\Desktop\\ETicaretApi\\Infrastructure\\Persistence\\Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\trkbg\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

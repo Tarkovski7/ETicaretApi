@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Abstractions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Persistence.Concretes;
+using Persistence.Contexts;
 
 namespace Persistence
 {
@@ -12,7 +13,7 @@ namespace Persistence
     {
         public static void AddPersistenceRegistration(this IServiceCollection service)
         {
-            service.AddSingleton<IProductService , ProductService>();
+            service.AddDbContext<EticaretApiDbContext>(options => options.UseSqlServer(Configuration.ConnectionString));
         }
     }
 }

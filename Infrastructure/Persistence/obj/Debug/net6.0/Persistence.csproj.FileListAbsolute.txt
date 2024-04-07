@@ -15,3 +15,6 @@ C:\Users\trkbg\Desktop\ETicaretApi\Infrastructure\Persistence\obj\Debug\net6.0\P
 C:\Users\trkbg\Desktop\ETicaretApi\Infrastructure\Persistence\obj\Debug\net6.0\refint\Persistence.dll
 C:\Users\trkbg\Desktop\ETicaretApi\Infrastructure\Persistence\obj\Debug\net6.0\Persistence.pdb
 C:\Users\trkbg\Desktop\ETicaretApi\Infrastructure\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+C:\Users\trkbg\Desktop\ETicaretApi\Infrastructure\Persistence\bin\Debug\net6.0\Persistence.runtimeconfig.json
+C:\Users\trkbg\Desktop\ETicaretApi\Infrastructure\Persistence\obj\Debug\net6.0\Persistence.sourcelink.json
+C:\Users\trkbg\Desktop\ETicaretApi\Infrastructure\Persistence\obj\Debug\net6.0\Persistence.genruntimeconfig.cache

@@ -15,7 +15,7 @@ namespace Persistence
                 ConfigurationManager configurationManager = new();
                 configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../Presentation/ETicaretApi"));
                 configurationManager.AddJsonFile("appsettings.json");
-                return configurationManager.GetConnectionString("ConStr");
+                return configurationManager.GetConnectionString("Tarik");
             }
         }
     }

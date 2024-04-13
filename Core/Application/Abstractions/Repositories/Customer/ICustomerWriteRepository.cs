@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Domain.Entities;
 
-namespace Application.Abstractions
+namespace Application.Abstractions.Repositories
 {
-    public interface IProductService
+    public interface ICustomerWriteRepository : IWriteRepository<Customer>
     {
-        List<Product> GetProducts();
+        
     }
 }

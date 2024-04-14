@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Mm/hTMRTB57pJZ2mJ4mJpaga2kzQb/smtHggizT/Yx22ykwsBBlCKX2H5WEIzx9ND8mfGFSHS0w5GXZZT1ZFVw==",
+  "dgSpecHash": "ei9n0KJJUb6KnI+OfzO67wGVBgphUTYkKAwfh0qIdAFS3THW5Wf743H4wUxyGSDIYPCy0jtiwPbBAzukfcE9NA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\trkbg\\Desktop\\ETicaretApi\\Presentation\\ETicaretApi\\ETicaretApi.csproj",
+  "projectFilePath": "C:\\Users\\trkbg\\Desktop\\ETicaretApp\\ETicaretApi\\Presentation\\ETicaretApi\\ETicaretApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trkbg\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\trkbg\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

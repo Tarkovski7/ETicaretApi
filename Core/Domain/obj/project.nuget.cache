@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Eacj2v0HonMeDlDXofO6njc1xdfGBaTHRFZSZPbwCJ31GPqzptFJ+6riOdWsxtlUg1f20MF3x7iN4KbCTi7pg==",
+  "dgSpecHash": "90nxqQbZrIfByspbuvKk1r/kskxhDJIuOf3u8QR6/xH3gXNu61BS2mY8UmRYN9mfFErjfps3E0hVCfZ0OG4yNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\trkbg\\Desktop\\ETicaretApi\\Core\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\trkbg\\Desktop\\ETicaretApp\\ETicaretApi\\Core\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

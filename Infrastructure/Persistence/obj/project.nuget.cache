@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V+qXeIJ5GxgsoS+O+1NTyD+zJP7Xzcq7bzElJCamkwpoL1t3+z6AhQ/8KC7JwQa6ROH0gke1LEQB8I4fblRE4g==",
+  "dgSpecHash": "oozDtNAgFCeOG7VG1bSMucf/tL6/e2CB9JFoBeAvuv2kK7gsun4ecs12d3SCConlp+VnZWh8GnWUS/PgSennZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\trkbg\\Desktop\\ETicaretApi\\Infrastructure\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\trkbg\\Desktop\\ETicaretApp\\ETicaretApi\\Infrastructure\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trkbg\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\trkbg\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -14,28 +14,24 @@ namespace ETicaretApi.Controllers
     {
         private readonly IProductReadRepository readRepository;
         private readonly IProductWriteRepository writeRepository;
+        private readonly IOrderWriteRepository orderWriteRepository;
+        private readonly ICustomerWriteRepository customerWriteRepository;
+        private readonly IOrderReadRepository orderReadRepository;
 
-
-        public ProductsController(IProductReadRepository readRepository, IProductWriteRepository writeRepository)
+        public ProductsController(IProductReadRepository readRepository, IProductWriteRepository writeRepository, IOrderWriteRepository orderWriteRepository, ICustomerWriteRepository customerWriteRepository, IOrderReadRepository orderReadRepository)
         {
             this.readRepository = readRepository;
             this.writeRepository = writeRepository;
+            this.orderWriteRepository = orderWriteRepository;
+            this.customerWriteRepository = customerWriteRepository;
+            this.orderReadRepository = orderReadRepository;
         }
         [HttpGet]
         public async Task Get()
         {
-            // writeRepository.AddRangeAsync(new()
-            // {
-            //     new(){Id=Guid.NewGuid() , CreatedDate = DateTime.Now , Name="Product 1" , Price = 100 , Stock = 10},
-            //     new(){Id=Guid.NewGuid() , CreatedDate = DateTime.Now , Name="Product 3" , Price = 200 , Stock = 20},
-            //     new(){Id=Guid.NewGuid() , CreatedDate = DateTime.Now , Name="Product 2" , Price = 300 , Stock = 30},
-            // });
-            // writeRepository.SaveAsync();
-
-            Product p = await readRepository.GetByIdAsync("9cbe1789-218b-4bcc-af51-244c79820edf" , false);
-            p.Name = "Urun 25";
-            await writeRepository.SaveAsync();
-
+            Order order = await orderReadRepository.GetByIdAsync("56d3bf19-10e7-4144-9af2-08dc5c8c7f7b");
+            order.Address = "asdlaskdmasdlaskmd kasmdlaskmdasl";
+            await orderWriteRepository.SaveAsync();
         }
     }
 }

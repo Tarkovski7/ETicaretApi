@@ -2423,11 +2423,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\trkbg\\Desktop\\ETicaretApi\\Infrastructure\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\trkbg\\Desktop\\ETicaretApi\\Infrastructure\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "c:\\Users\\trkbg\\Desktop\\ETicaretApi\\Infrastructure\\Persistence\\Persistence.csproj",
+      "projectPath": "C:\\Users\\trkbg\\Desktop\\ETicaretApi\\Infrastructure\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\trkbg\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\trkbg\\Desktop\\ETicaretApi\\Infrastructure\\Persistence\\obj\\",
+      "outputPath": "C:\\Users\\trkbg\\Desktop\\ETicaretApi\\Infrastructure\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\trkbg\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -2869,11 +2869,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\trkbg\\Desktop\\ETicaretApi\\Presentation\\ETicaretApi\\ETicaretApi.csproj",
+      "projectUniqueName": "C:\\Users\\trkbg\\Desktop\\ETicaretApi\\Presentation\\ETicaretApi\\ETicaretApi.csproj",
       "projectName": "ETicaretApi",
-      "projectPath": "c:\\Users\\trkbg\\Desktop\\ETicaretApi\\Presentation\\ETicaretApi\\ETicaretApi.csproj",
+      "projectPath": "C:\\Users\\trkbg\\Desktop\\ETicaretApi\\Presentation\\ETicaretApi\\ETicaretApi.csproj",
       "packagesPath": "C:\\Users\\trkbg\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\trkbg\\Desktop\\ETicaretApi\\Presentation\\ETicaretApi\\obj\\",
+      "outputPath": "C:\\Users\\trkbg\\Desktop\\ETicaretApi\\Presentation\\ETicaretApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\trkbg\\AppData\\Roaming\\NuGet\\NuGet.Config",

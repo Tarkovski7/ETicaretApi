@@ -15,16 +15,16 @@ namespace Persistence
     {
         public static void AddPersistenceRegistration(this IServiceCollection service)
         {
-            service.AddDbContext<EticaretApiDbContext>(options => options.UseSqlServer(Configuration.ConnectionString), ServiceLifetime.Singleton);
+            service.AddDbContext<EticaretApiDbContext>(options => options.UseSqlServer(Configuration.ConnectionString));
 
-            service.AddSingleton<IProductReadRepository , ProductReadRepository>();
-            service.AddSingleton<IProductWriteRepository , ProductWriteRepository>();
+            service.AddScoped<IProductReadRepository , ProductReadRepository>();
+            service.AddScoped<IProductWriteRepository , ProductWriteRepository>();
             
-            service.AddSingleton<IOrderReadRepository , OrderReadRepository>();
-            service.AddSingleton<IOrderWriteRepository , OrderWriteRepository>();
+            service.AddScoped<IOrderReadRepository , OrderReadRepository>();
+            service.AddScoped<IOrderWriteRepository , OrderWriteRepository>();
             
-            service.AddSingleton<ICustomerReadRepository , CustomerReadRepository>();
-            service.AddSingleton<ICustomerWriteRepository , CustomerWriteRepository>();
+            service.AddScoped<ICustomerReadRepository , CustomerReadRepository>();
+            service.AddScoped<ICustomerWriteRepository , CustomerWriteRepository>();
         }
     }
 }

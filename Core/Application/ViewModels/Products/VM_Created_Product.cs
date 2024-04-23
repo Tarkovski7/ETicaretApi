@@ -2,16 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Domain.Entities.Common;
 
-namespace Domain.Entities
+namespace Application.ViewModels.Products
 {
-    public class Product : BaseEntity
+    public class VM_Created_Product
     {
-        public string? Name { get; set; }
         public int Stock { get; set; }
+        public string Name { get; set; }
         public float Price { get; set; }
-
-        public ICollection<Order> Orders { get; set; }
     }
 }

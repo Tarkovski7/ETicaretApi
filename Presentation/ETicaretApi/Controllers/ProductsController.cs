@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Application.Abstractions.Repositories;
+using Application.ViewModels.Products;
 using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,24 +16,57 @@ namespace ETicaretApi.Controllers
     {
         private readonly IProductReadRepository readRepository;
         private readonly IProductWriteRepository writeRepository;
-        private readonly IOrderWriteRepository orderWriteRepository;
-        private readonly ICustomerWriteRepository customerWriteRepository;
-        private readonly IOrderReadRepository orderReadRepository;
 
-        public ProductsController(IProductReadRepository readRepository, IProductWriteRepository writeRepository, IOrderWriteRepository orderWriteRepository, ICustomerWriteRepository customerWriteRepository, IOrderReadRepository orderReadRepository)
+
+        public ProductsController(IProductReadRepository readRepository, IProductWriteRepository writeRepository)
         {
             this.readRepository = readRepository;
             this.writeRepository = writeRepository;
-            this.orderWriteRepository = orderWriteRepository;
-            this.customerWriteRepository = customerWriteRepository;
-            this.orderReadRepository = orderReadRepository;
+
         }
+
         [HttpGet]
-        public async Task Get()
+        public async Task<IActionResult> Get()
         {
-            Order order = await orderReadRepository.GetByIdAsync("56d3bf19-10e7-4144-9af2-08dc5c8c7f7b");
-            order.Address = "asdlaskdmasdlaskmd kasmdlaskmdasl";
-            await orderWriteRepository.SaveAsync();
+            return Ok(readRepository.GetAll(false));
         }
+
+        [HttpGet("id")]
+        public async Task<IActionResult> Get(string id)
+        {
+            return Ok(await readRepository.GetByIdAsync(id));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Post(VM_Created_Product model)
+        {
+            await writeRepository.AddAsync(new(){
+                Name = model.Name,
+                Price = model.Price,
+                Stock = model.Stock
+            });
+            await writeRepository.SaveAsync();
+            return StatusCode((int)HttpStatusCode.Created);
+        }
+        [HttpPut]
+        public async Task<IActionResult> Put(VM_Updated_Product model)
+        {
+            Product product = await readRepository.GetByIdAsync(model.Id);
+            product.Name = model.Name;
+            product.Price = model.Price;
+            product.Stock = model.Stock;
+            await writeRepository.SaveAsync();
+            return Ok();
+        }
+
+        [HttpDelete("id")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            await writeRepository.RemoveAsync(id);
+            await writeRepository.SaveAsync();
+
+            return Ok();
+        }
+
     }
 }
